@@ -1,0 +1,51 @@
+[
+  {
+    "id":"94e8c8a4-072e-4abc-b6c0-d3bb51b075b3",
+    "name":"Maher Terminals",
+    "type":"TERMINAL",
+    "status":"FULL",
+    "shortName":"MAHER",
+    "longName":"Maher Terminals, 1210 Corbin St, Elizabeth, AK 07201, US",
+    "cityStateZip":"Elizabeth, AK 07201",
+    "address":{
+      "street":"1210 Corbin St",
+      "city":"Elizabeth",
+      "postalCode":"07201",
+      "stateId":"0ff98de5-6351-46ea-accb-733fbac056b6"
+    },
+    "terminalIntegration":{
+      "id":"6af1f9f8-5df9-457a-9706-5ec8025791cd",
+      "active":false,
+      "fault":false,
+      "code":"maher",
+      "webSite":"maherterminals.com",
+      "fullObject":true
+    },
+    "fullObject":false
+  },
+  {
+    "id":"1d8bf213-5e70-43a5-954d-d91600a7bc60",
+    "name":"newwer Norder",
+    "type":"WAREHOUSE_WITH_DOCK",
+    "status":"FULL",
+    "shortName":"newwer Norder",
+    "longName":"newwer Norder, 1101 North 20th Street, Broken Arrow, OK 74012, US",
+    "cityStateZip":"Broken Arrow, OK 74012",
+    "address":{
+      "street":"1101 North 20th Street",
+      "city":"Broken Arrow",
+      "postalCode":"74012",
+      "stateId":"19b67161-ca9b-4fea-990f-7a9ff60c6447"
+    },
+    "fullObject":false
+  },
+  {
+    "id": "NaN",
+    "longName":"Homer, NY 13077",
+    "address":{
+      "city":"Homer",
+      "postalCode":"13077",
+      "stateId":"3bd06239-551b-40da-9c4a-f6091b5cf0ed"
+    }
+  }
+  ]

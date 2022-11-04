@@ -1,0 +1,78 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-26T17:00:40.033Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3904398500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.InitSteps.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "1 default",
+        "description": "",
+        "id": "default;1-default",
+        "after": [
+          {
+            "result": {
+              "duration": 177817100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.InitSteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1160271300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open \"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"home\"",
+                  "offset": 7
+                }
+              ],
+              "location": "steps.GenericTests.iOpen(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@default"
+          }
+        ]
+      }
+    ],
+    "name": "default",
+    "description": "",
+    "id": "default",
+    "keyword": "Feature",
+    "uri": "file:src/test/features/defaultFeature.feature",
+    "tags": [
+      {
+        "name": "@default",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

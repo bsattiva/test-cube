@@ -1,0 +1,12 @@
+{
+  "method": "Network.webSocketFrameReceived",
+  "params": {
+    "requestId": "7644.318",
+    "response": {
+      "opcode": 1,
+      "payloadData": "a[\"MESSAGE\\neventType:UPDATED\\ntype:SellSideQuoteRateDTO\\ndestination:/entity-queue\\ncontent-type:application/json\\nsubscription:sub-0\\nmessage-id:vym4aljl-5108\\ncontent-length:625\\n\\n{\\\"id\\\":\\\"4deee241-ae16-40c1-a960-a687cda8d6b1\\\",\\\"number\\\":2357,\\\"version\\\":2,\\\"status\\\":\\\"EXPIRED\\\",\\\"type\\\":\\\"BASE\\\",\\\"deliveryOrderType\\\":\\\"IMPORT\\\",\\\"containerTypeId\\\":\\\"1c72309d-2fb6-4f8e-99d4-94a07ca5d95e\\\",\\\"loadType\\\":\\\"LIVE_LOAD\\\",\\\"customerId\\\":\\\"88c8c275-ad74-4c98-a89e-36c476333c8e\\\",\\\"pickupLocationId\\\":\\\"94e8c8a4-072e-4abc-b6c0-d3bb51b075b3\\\",\\\"returnLocationId\\\":\\\"94e8c8a4-072e-4abc-b6c0-d3bb51b075b3\\\",\\\"deliveryPostalCode\\\":\\\"13077\\\",\\\"deliveryCity\\\":\\\"Homer\\\",\\\"deliveryStateId\\\":\\\"3bd06239-551b-40da-9c4a-f6091b5cf0ed\\\",\\\"ruleIds\\\":[\\\"dcdb3da2-149f-4042-85c3-9e57b8462642\\\"],\\\"calculationType\\\":\\\"FIXED_AMOUNT\\\",\\\"effectiveDate\\\":\\\"2021-07-22T04:00:00Z\\\",\\\"amount\\\":23}\\u0000\"]",
+      "mask": false
+    },
+    "timestamp": 152424.597211
+  }
+}

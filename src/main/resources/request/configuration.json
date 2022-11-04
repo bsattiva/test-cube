@@ -1,0 +1,313 @@
+{
+  "dev": {
+    "containers": {
+      "40HG – 40’ High Cube General": "1c72309d-2fb6-4f8e-99d4-94a07ca5d95e",
+      "20SG – 20’ Standard General": "fcaf425d-9fe2-4430-971b-a3573c41ac6c",
+      "40HR – 40’ High Cube Refrigerated": "34708911-3d31-474c-a5e9-edc4f78dbd94",
+      "20SR – 20’ Standard Refrigerated": "31fb2bb3-e8cd-470f-8f04-958308ae0dbe"
+    },
+    "containerNames": {
+      "ACLU9756620": "6dc6b29f-1766-4c87-8476-e167b4cc2520"
+    },
+    "steamLines": {
+      "ACL": "8624acb9-f6a8-4eff-9aa1-a1a9d9ed245b"
+    },
+    "customers": {
+      "1": {
+        "name": "ABC Corp",
+        "id": "88c8c275-ad74-4c98-a89e-36c476333c8e"
+      },
+      "2": {
+        "name": "ABC Corp 3",
+        "id": "88c8c275-ad74-4c98-a89e-36c476333c8e"
+      }
+    },
+    "rules": {
+      "50 Miles": "dcdb3da2-149f-4042-85c3-9e57b8462642",
+      "Hazmat": "07b71a52-b239-4556-b308-97f9fca10186"
+    },
+    "drivers": {
+
+      "1": {
+        "name": "Albert Einstein",
+        "id": "a46d6ead-cbf3-4dee-b893-f99e66da0d6e"
+      },
+      "2": {
+        "name": "Albert Enstein",
+        "id": "a46d6ead-cbf3-4dee-b893-f99e66da0d6e"
+      },
+      "3": {
+        "name": "Alex Driver",
+        "id": "7d1d9631-dedc-4bc6-9a20-98fa14748cef"
+      },
+      "4": {
+        "name": "Anna Karenina",
+        "id": "44ec7bf0-deb2-447f-8674-3a4d4c6833ab"
+      }
+    },
+    "load": {
+      "LIVE": "LIVE_LOAD",
+      "D&P": "DROP_AND_PICK",
+      "DROP": "DROP",
+      "PICK": "PICK"
+    },
+    "rate": {
+      "Drop & Pick": "DROP_AND_PICKUP",
+      "Pre-pull": "PREPULL"
+    },
+    "lines": {
+      "ACL": "8624acb9-f6a8-4eff-9aa1-a1a9d9ed245b"
+    },
+    "locations": [
+      {
+        "locationId": "1",
+        "id": "94e8c8a4-072e-4abc-b6c0-d3bb51b075b3",
+        "name":"Maher Terminals",
+        "type":"TERMINAL",
+        "status":"FULL",
+        "shortName":"MAHER",
+        "longName":"Maher Terminals, 1210 Corbin St, Elizabeth, AK 07201, US",
+        "cityStateZip":"Elizabeth, AK 07201",
+        "address":{
+          "street":"1210 Corbin St",
+          "city":"Elizabeth",
+          "postalCode":"07201",
+          "stateId":"0ff98de5-6351-46ea-accb-733fbac056b6"
+        },
+        "terminalIntegration":{
+          "id":"6af1f9f8-5df9-457a-9706-5ec8025791cd",
+          "active":false,
+          "fault":false,
+          "code":"maher",
+          "webSite":"maherterminals.com",
+          "fullObject":true
+        },
+        "fullObject":false
+      },
+      {
+        "locationId": "2",
+        "id":"1d8bf213-5e70-43a5-954d-d91600a7bc60",
+        "name":"newwer Norder",
+        "type":"WAREHOUSE_WITH_DOCK",
+        "status":"FULL",
+        "shortName":"newwer Norder",
+        "longName":"newwer Norder, 1101 North 20th Street, Broken Arrow, OK 74012, US",
+        "cityStateZip":"Broken Arrow, OK 74012",
+        "address":{
+          "street":"1101 North 20th Street",
+          "city":"Broken Arrow",
+          "postalCode":"74012",
+          "stateId":"19b67161-ca9b-4fea-990f-7a9ff60c6447"
+        },
+        "fullObject":false
+      },
+      {
+        "locationId": "3",
+        "id": "NaN",
+        "longName":"Homer, NY 13077",
+        "shortName": "Homer",
+        "address":{
+          "city":"Homer",
+          "postalCode":"13077",
+          "stateId":"3bd06239-551b-40da-9c4a-f6091b5cf0ed"
+        }
+      },
+      {
+        "locationId": "4",
+        "fullObject": false,
+        "address": {
+          "city": "New York",
+          "street": "1210 Corbin Street, Elizabeth, NewJersey 07201 U.S.A. Contact: Customer Support",
+          "postalCode": "07201",
+          "stateId": "3bd06239-551b-40da-9c4a-f6091b5cf0ed"
+        },
+        "careOf": "Maher Terminals LLC ",
+        "mismatchIndicator": true,
+        "cityStateZip": "New York, NY 07201",
+        "name": "Maher Terminals LLC 534643534346",
+        "id": "8fd6a613-c6b6-4f41-a8fa-0b53515031ca",
+        "type": "OTHER",
+        "shortName": "MAHER",
+        "status": "FULL",
+        "longName": "Maher Terminals LLC 534643534346, Maher Terminals LLC , 1210 Corbin Street, Elizabeth, NewJersey 07201 U.S.A. Contact: Customer Support, New York, NY 07201, US"
+      },
+      {
+        "locationId": "5",
+        "fullObject": false,
+        "address": {
+          "city": "Elizabeth",
+          "street": "1210 Corbin St",
+          "postalCode": "07201",
+          "stateId": "0ff98de5-6351-46ea-accb-733fbac056b6"
+        },
+        "terminalIntegration": {
+          "webSite": "maherterminals.com",
+          "fullObject": true,
+          "code": "maher",
+          "active": false,
+          "fault": false,
+          "id": "6af1f9f8-5df9-457a-9706-5ec8025791cd"
+        },
+        "cityStateZip": "Elizabeth, AK 07201",
+        "name": "Maher Terminals",
+        "id": "94e8c8a4-072e-4abc-b6c0-d3bb51b075b3",
+        "type": "TERMINAL",
+        "shortName": "MAHER",
+        "status": "FULL",
+        "longName": "Maher Terminals, 1210 Corbin St, Elizabeth, AK 07201, US"
+      },
+      {
+        "locationId": "6",
+        "id": "fa330967-7756-4161-b60a-4b1496483f2d",
+        "name": "Cynara Worldwide Sourcing Inc",
+        "type": "TERMINAL",
+        "status": "FULL",
+        "shortName": "Cynara Worldwide Sourcing Inc",
+        "longName": "Cynara Worldwide Sourcing Inc, 1045 Cranbury South River Road, Jamesburg, NJ 08831, US",
+        "cityStateZip": "Jamesburg, NJ 08831",
+        "address": {
+          "street": "1045 Cranbury South River Road",
+          "city": "Jamesburg",
+          "postalCode": "08831",
+          "stateId": "7c5029d7-a63d-47e4-9206-47641c67477c"
+        },
+        "careOf": "HERMANN WAREHOUSE",
+        "fullObject": false
+      },
+      {
+
+        "locationId": "7",
+        "id": "566f1a9e-d12a-4e5e-9603-af9317270b32",
+        "name": "Security Yard Svetlana",
+        "type": "CONTAINER_YARD",
+        "status": "FULL",
+        "shortName": "Security Yard Svetlana",
+        "longName": "ecurity Yard Svetlana, NY, NY, US",
+        "cityStateZip": "NY, NY",
+        "address": {
+          "street": "",
+          "city": "NY",
+          "postalCode": "",
+          "stateId": "3bd06239-551b-40da-9c4a-f6091b5cf0ed"
+        }
+      }
+    ]
+  },
+  "stage": {
+    "containers": {
+      "40HG – 40’ High Cube General": "1c72309d-2fb6-4f8e-99d4-94a07ca5d95e",
+      "20SG – 20’ Standard General": "fcaf425d-9fe2-4430-971b-a3573c41ac6c"
+    },
+    "containerNames": {
+      "ACLU9756620": "6dc6b29f-1766-4c87-8476-e167b4cc2520"
+    },
+    "steamLines": {
+      "ACL": "8624acb9-f6a8-4eff-9aa1-a1a9d9ed245b"
+    },
+    "customers": {
+      "1": {
+        "name": "ASIK INTERNATIONAL INC",
+        "id": "5094ca81-5841-40ca-92ef-192b70446932"
+      },
+      "2": {
+        "name": "ASIK INTERNATIONAL INC",
+        "id": "5094ca81-5841-40ca-92ef-192b70446932"
+      }
+    },
+    "rules": {
+      "50 Miles": "dcdb3da2-149f-4042-85c3-9e57b8462642",
+      "Hazmat": "07b71a52-b239-4556-b308-97f9fca10186"
+    },
+    "drivers": {
+
+      "1": {
+        "name": "Bill Porter",
+        "id": "f3b0c4d5-a03c-427e-bd33-a2b593ec51c2"
+      },
+      "2": {
+        "name": "Carlos Torres",
+        "id": "ef31bbd4-014b-41c1-b12b-2012c358d416"
+      }
+    },
+    "load": {
+      "LIVE": "LIVE_LOAD",
+      "D&P": "DROP_AND_PICK",
+      "DROP": "DROP",
+      "PICK": "PICK"
+    },
+    "rate": {
+      "Drop & Pick": "DROP_AND_PICKUP",
+      "Pre-pull": "PREPULL"
+    },
+    "lines": {
+      "ACL": "8624acb9-f6a8-4eff-9aa1-a1a9d9ed245b"
+    },
+    "locations": [
+      {
+        "locationId": "1",
+        "id": "0e207d28-8d6b-4637-ae12-50a9bc6afb74",
+        "name":"Maher Terminals",
+        "type":"TERMINAL",
+        "status":"FULL",
+        "shortName":"MAHER",
+        "longName":"Maher Terminals, 1210 Corbin St, Elizabeth, AK 07201, US",
+        "cityStateZip":"Elizabeth, AK 07201",
+        "address":{
+          "street":"1210 Corbin St",
+          "city":"Elizabeth",
+          "postalCode":"07201",
+          "stateId":"0ff98de5-6351-46ea-accb-733fbac056b6"
+        },
+        "terminalIntegration":{
+          "id":"6af1f9f8-5df9-457a-9706-5ec8025791cd",
+          "active":false,
+          "fault":false,
+          "code":"maher",
+          "webSite":"maherterminals.com",
+          "fullObject":true
+        },
+        "fullObject":false
+      },
+      {
+        "locationId": "2",
+        "id":"12e68a95-7848-4ee1-bd66-3152ef9e0731",
+        "name":"HARBOR FREIGHT TRANSPORT CORP",
+        "type":"WAREHOUSE_WITH_DOCK",
+        "status":"FULL",
+        "shortName":"HARBOR FREIGHT TRANSPORT CORP",
+        "longName":"HARBOR FREIGHT TRANSPORT CORP, 301 Craneway Street, Newark, NJ 07114, US",
+        "cityStateZip":"Newark, NJ 07114",
+        "address":{
+          "street":"301 Craneway Street",
+          "city":"Newark",
+          "postalCode":"07114",
+          "stateId":"7c5029d7-a63d-47e4-9206-47641c67477c"
+        },
+        "fullObject":false
+      },
+      {
+        "locationId": "3",
+        "id":"e1dc429a-e50c-40ba-951a-452969ead69f",
+        "name":"INTERPORT",
+        "type":"WAREHOUSE_WITH_DOCK",
+        "status":"FULL",
+        "shortName":"INTERPORT",
+        "longName":"INTERPORT, 635 Delancy Street, Newark, NJ 07105, US",
+        "cityStateZip":"Newark, NJ 07105",
+        "address":{
+          "street":"635 Delancy Street",
+          "city":"Newark",
+          "postalCode":"07105",
+          "stateId":"7c5029d7-a63d-47e4-9206-47641c67477c"
+        },
+        "fullObject":false
+      }
+    ]
+  },
+  "prod": {
+
+  }
+
+
+
+}

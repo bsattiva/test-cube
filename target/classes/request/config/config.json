@@ -1,0 +1,32 @@
+{
+  "containers": {
+    "40HG – 40’ High Cube General": "1c72309d-2fb6-4f8e-99d4-94a07ca5d95e",
+    "20SG – 20’ Standard General": "fcaf425d-9fe2-4430-971b-a3573c41ac6c"
+  },
+
+  "customers": {
+    "ABC Corp": "88c8c275-ad74-4c98-a89e-36c476333c8e",
+    "ABC Corp 3": "88c8c275-ad74-4c98-a89e-36c476333c8e"
+  },
+  "rules": {
+    "50 Miles": "dcdb3da2-149f-4042-85c3-9e57b8462642",
+    "251+ Miles": "c0013165-81e4-4344-bb5b-36307fbe0802",
+    "Pickup": "d141eaab-aed4-44bb-977d-fbd375e58a40",
+    "Return": "dd30744c-376d-4c84-9170-bb71f7bad771",
+    "Hazmat": "07b71a52-b239-4556-b308-97f9fca10186"
+  },
+  "drivers": {
+    "Albert Einstein": "a46d6ead-cbf3-4dee-b893-f99e66da0d6e",
+    "Albert Enstein": "a46d6ead-cbf3-4dee-b893-f99e66da0d6e"
+  },
+  "load": {
+    "LIVE": "LIVE_LOAD",
+    "D&P": "DROP_AND_PICK",
+    "DROP": "DROP",
+    "PICK": "PICK"
+  },
+  "rate": {
+    "Drop & Pick": "DROP_AND_PICKUP",
+    "Pre-pull": "PREPULL"
+  }
+}
