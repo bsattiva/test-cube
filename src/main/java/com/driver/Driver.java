@@ -27,6 +27,7 @@ public class Driver {
         //chromeOptions.addArguments("start-maximized");
         chromeOptions.addArguments("--disable-gpu");
         chromeOptions.addArguments("--no-sandbox");
+        chromeOptions.addArguments("--disable-setuid-sandbox");
         chromeOptions.addArguments("--disable-dev-shm-usage");
 
         chromeOptions.addArguments("--lang=en_us");
