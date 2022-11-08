@@ -23,7 +23,7 @@ public class GenericTests {
         var pageObject = new Page(page);
 
         Context.getVars().getPages().add(pageObject);
-  //      FileHelper.appendPageToFile(pageObject.getPageObject());
+        FileHelper.appendPageToFile(pageObject.getPageObject());
 
     }
 

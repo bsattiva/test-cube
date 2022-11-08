@@ -7,6 +7,7 @@ import com.utils.FileHelper;
 import com.utils.Vars;
 import com.utils.data.QueryHelper;
 import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.apache.log4j.Logger;
@@ -39,6 +40,12 @@ public class InitSteps {
         Context.getVars().setRunId(runId);
     }
 
+    @AfterStep
+    public void registerStep(final Scenario scenario) {
+        var status = (scenario.isFailed()) ? "failed" : "passed";
+        QueryHelper.sendStep(status);
+    }
+
     @After
     public void tearDown(Scenario scenario) {
         var resultObject = new JSONObject();
@@ -46,7 +53,7 @@ public class InitSteps {
         var status = (scenario.isFailed()) ? "failed" : "passed";
         var project = Context.getVars().getProject();
 
-        QueryHelper.sendStep(status);
+
         Context.unload();
 
     }
