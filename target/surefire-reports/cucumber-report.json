@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-11-07T21:00:34.114Z",
+        "start_timestamp": "2022-11-08T19:57:36.357Z",
         "before": [
           {
             "result": {
-              "duration": 7612716200,
+              "duration": 3943824500,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 134551500,
+              "duration": 145083800,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3526505100,
+              "duration": 3225219100,
               "status": "passed"
             },
             "line": 4,
@@ -49,6 +49,17 @@
               ],
               "location": "steps.GenericTests.iOpen(java.lang.String)"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 68477400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "steps.InitSteps.registerStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
             "keyword": "Given "
           }
         ],
