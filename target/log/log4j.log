@@ -1,3 +1,24 @@
 2022-11-07 21:00:34 INFO  InitSteps:27 - Starting scenario: 1 default
 2022-11-07 21:00:34 INFO  Driver:76 - STARTING with url: http://109.228.57.213:4444/wd/hub/
 2022-11-07 21:00:41 INFO  Driver:78 - DRIVER STARTED
+2022-11-08 13:12:24 INFO  InitSteps:27 - Starting scenario: 1 default
+2022-11-08 13:12:24 INFO  Driver:85 - STARTING with url: http://109.228.57.213:4444/wd/hub/
+2022-11-08 13:12:28 INFO  Driver:87 - DRIVER STARTED
+2022-11-08 13:12:58 INFO  InitSteps:27 - Starting scenario: 1 default
+2022-11-08 13:12:59 INFO  Driver:85 - STARTING with url: http://109.228.57.213:4444/wd/hub/
+2022-11-08 13:13:01 INFO  Driver:87 - DRIVER STARTED
+2022-11-08 13:14:28 INFO  InitSteps:27 - Starting scenario: 1 default
+2022-11-08 13:14:28 INFO  Driver:85 - STARTING with url: http://109.228.57.213:4444/wd/hub/
+2022-11-08 13:44:27 INFO  InitSteps:27 - Starting scenario: 1 default
+2022-11-08 13:44:28 INFO  Driver:85 - STARTING with url: http://109.228.57.213:4444/wd/hub/
+2022-11-08 13:44:32 INFO  Driver:87 - DRIVER STARTED
+2022-11-08 13:46:46 INFO  InitSteps:27 - Starting scenario: 1 default
+2022-11-08 13:46:46 INFO  Driver:85 - STARTING with url: http://109.228.57.213:4444/wd/hub/
+2022-11-08 13:46:51 INFO  Driver:87 - DRIVER STARTED
+2022-11-08 13:46:55 ERROR FileHelper:54 - File 'C:\Users\Maxim.Karpov\IdeaProjects\TestCube\src\test\resources\pages.json' does not exist
+2022-11-08 13:51:14 INFO  InitSteps:27 - Starting scenario: 1 default
+2022-11-08 13:51:14 INFO  Driver:85 - STARTING with url: http://109.228.57.213:4444/wd/hub/
+2022-11-08 13:51:17 INFO  Driver:87 - DRIVER STARTED
+2022-11-08 13:52:29 INFO  InitSteps:27 - Starting scenario: 1 default
+2022-11-08 13:52:29 INFO  Driver:85 - STARTING with url: http://109.228.57.213:4444/wd/hub/
+2022-11-08 13:52:31 INFO  Driver:87 - DRIVER STARTED

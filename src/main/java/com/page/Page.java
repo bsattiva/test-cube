@@ -33,12 +33,16 @@ public class Page {
     }
 
     private static JSONObject getPageObject(final String pageName) {
-        for (var i = 0; i < CONFIGURATION.getJSONArray("pages").length(); i++) {
-            var item = CONFIGURATION.getJSONArray("pages").getJSONObject(i);
-            if (CONFIGURATION.getJSONArray("pages").getJSONObject(i).getString("pageName").equals(pageName)) {
-                return CONFIGURATION.getJSONArray("pages").getJSONObject(i);
+        if (CONFIGURATION.has("pages")) {
+            for (var i = 0; i < CONFIGURATION.getJSONArray("pages").length(); i++) {
+                var item = CONFIGURATION.getJSONArray("pages").getJSONObject(i);
+                if (CONFIGURATION.getJSONArray("pages").getJSONObject(i).getString("pageName").equals(pageName)) {
+                    return CONFIGURATION.getJSONArray("pages").getJSONObject(i);
+                }
             }
+
         }
+
         return null;
     }
 

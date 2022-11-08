@@ -1,5 +1,6 @@
 package com.driver;
 
+import com.utils.FileHelper;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Dimension;
@@ -43,7 +44,7 @@ public class Driver {
                 break;
             case "REMOTE":
                 chromeOptions.addArguments(("--window-size=1920,1080"));
-                driver = getRemoteDriver(getRemoteUrl(getHostname() + ":5555"), chromeOptions);
+                driver = getRemoteDriver(getRemoteUrl(getHostname() + ":" + getPort()), chromeOptions);
                 break;
             case "HEADLESS":
                 chromeOptions.addArguments("--headless");
@@ -61,13 +62,20 @@ public class Driver {
     private static String getHostname() {
 
    //     return "109.228.57.213";
-        return "172.18.0.3";
+     //   return "172.18.0.3";
+        return FileHelper.getPropertyFromFile("config.properties", "hostname");
 //        if (Helper.isThing(System.getProperty("fake"))) {
 //            return "localhost";
 //        } else {
 //            return "remote";
 //        }
     }
+
+    private static String getPort() {
+        return FileHelper.getPropertyFromFile("config.properties", "port");
+    }
+
+
 
     public static WebDriver getRemoteDriver(final String url, final ChromeOptions options) {
 
