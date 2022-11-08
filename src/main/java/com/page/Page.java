@@ -32,23 +32,23 @@ public class Page {
         return Context.getVars().getBaseUrl();
     }
 
-    private static JSONObject getPageObject(final String pageName) {
-        if (CONFIGURATION.has("pages")) {
-            for (var i = 0; i < CONFIGURATION.getJSONArray("pages").length(); i++) {
-                var item = CONFIGURATION.getJSONArray("pages").getJSONObject(i);
-                if (CONFIGURATION.getJSONArray("pages").getJSONObject(i).getString("pageName").equals(pageName)) {
-                    return CONFIGURATION.getJSONArray("pages").getJSONObject(i);
-                }
-            }
-
-        }
-
-        return null;
-    }
+//    private static JSONObject getPageObject(final String pageName) {
+//        if (CONFIGURATION.has("pages")) {
+//            for (var i = 0; i < CONFIGURATION.getJSONArray("pages").length(); i++) {
+//                var item = CONFIGURATION.getJSONArray("pages").getJSONObject(i);
+//                if (CONFIGURATION.getJSONArray("pages").getJSONObject(i).getString("pageName").equals(pageName)) {
+//                    return CONFIGURATION.getJSONArray("pages").getJSONObject(i);
+//                }
+//            }
+//
+//        }
+//
+//        return null;
+//    }
 
     private void populate() {
-        if (getPageObject(name) != null) {
-            pageObject = getPageObject(name);
+        if (PageHelper.getPageObject(name) != null) {
+            pageObject = PageHelper.getPageObject(name);
         } else {
             var html = Context.getDriver().findElement(By.tagName("html")).getAttribute("outerHTML");
             var body = new JSONObject();

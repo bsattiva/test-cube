@@ -22,3 +22,6 @@
 2022-11-08 13:52:29 INFO  InitSteps:27 - Starting scenario: 1 default
 2022-11-08 13:52:29 INFO  Driver:85 - STARTING with url: http://109.228.57.213:4444/wd/hub/
 2022-11-08 13:52:31 INFO  Driver:87 - DRIVER STARTED
+2022-11-08 17:43:24 INFO  InitSteps:27 - Starting scenario: 1 default
+2022-11-08 17:43:25 INFO  Driver:85 - STARTING with url: http://109.228.57.213:4444/wd/hub/
+2022-11-08 17:43:28 INFO  Driver:87 - DRIVER STARTED
