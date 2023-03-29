@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-11-08T19:57:36.357Z",
+        "start_timestamp": "2023-03-28T16:43:35.533Z",
         "before": [
           {
             "result": {
-              "duration": 3943824500,
+              "duration": 5415129200,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 3,
-        "name": "1 default",
+        "name": "defaultScenario",
         "description": "",
-        "id": "default;1-default",
+        "id": "default;defaultscenario",
         "after": [
           {
             "result": {
-              "duration": 145083800,
+              "duration": 146858300,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3225219100,
+              "duration": 4112295100,
               "status": "passed"
             },
             "line": 4,
@@ -52,7 +52,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 68477400,
+                  "duration": 46001100,
                   "status": "passed"
                 },
                 "match": {
@@ -61,6 +61,101 @@
               }
             ],
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 598321300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I populate \"email\" field with \"info@m-ostrov.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"info@m-ostrov.com\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.GenericTests.iPopulateFieldWith(java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 39999700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "steps.InitSteps.registerStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 244596400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I populate \"Password\" field with \"d\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Password\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"d\"",
+                  "offset": 33
+                }
+              ],
+              "location": "steps.GenericTests.iPopulateFieldWith(java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 42996400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "steps.InitSteps.registerStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 284134900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on \"Submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Submit\"",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.GenericTests.iClickOn(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 43539700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "steps.InitSteps.registerStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
           }
         ],
         "tags": [

@@ -48,9 +48,10 @@ public class Page {
 
     private void populate() {
         if (PageHelper.getPageObject(name) != null) {
-            pageObject = PageHelper.getPageObject(name);
+            pageObject = PageHelper.getPageObject(name).getJSONObject("elements");
         } else {
             var html = Context.getDriver().findElement(By.tagName("html")).getAttribute("outerHTML");
+            System.out.print(html);
             var body = new JSONObject();
             body.put("pageName", name);
 

@@ -2,6 +2,7 @@ package com.page;
 
 import com.context.Context;
 import com.utils.FileHelper;
+import com.utils.TestHelper;
 import com.utils.data.HttpClient;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
@@ -28,7 +29,8 @@ public class PageHelper {
     }
 
     protected static JSONObject getPageObject(final String name) {
-        var html = Context.getDriver().findElement(By.tagName("html")).getAttribute("outerHTML");
+        TestHelper.waitAjax();
+        var html = Context.getDriver().findElement(By.tagName("body")).getAttribute("outerHTML");
         var body = new JSONObject();
         body.put("pageName", name);
 

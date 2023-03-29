@@ -17,11 +17,12 @@ public class GenericTests {
 
     @Given("I open {string}")
     public void iOpen(String page) {
-        Context.getVars().setCurrentStepId("0");
+      //  Context.getVars().setCurrentStepId("0");
+        TestHelper.setCurrentStepId();
         var url = Page.getPageUrl(page);
         Context.getDriver().get(url);
-        var pageObject = new Page(page);
-
+         var pageObject = new Page(page);
+        Context.getVars().setCurrentPage(pageObject);
         Context.getVars().getPages().add(pageObject);
         FileHelper.appendPageToFile(pageObject.getPageObject());
 
@@ -29,7 +30,9 @@ public class GenericTests {
 
     @When("I populate {string} field with {string}")
     public void iPopulateFieldWith(String field, String value) {
-        Context.getVars().setCurrentStepId("1");
+       // Context.getVars().setCurrentStepId("1");
+        TestHelper.setCurrentStepId();
+        var pageObject = Context.getVars().getCurrentPage().getPageObject();
         var element = (Context.getVars().getCurrentPage().getPageObject().getJSONObject(field));
         var searchField =  Page.getWebElement(TestHelper.getLocator(element));
         searchField.sendKeys(value);
@@ -38,7 +41,8 @@ public class GenericTests {
 
     @And("I click on {string}")
     public void iClickOn(String field) {
-        Context.getVars().setCurrentStepId("2");
+       // Context.getVars().setCurrentStepId("2");
+        TestHelper.setCurrentStepId();
         var element = (Context.getVars().getCurrentPage().getPageObject().getJSONObject(field));
         var searchField =  Page.getWebElement(TestHelper.getLocator(element));
         searchField.click();
@@ -46,7 +50,8 @@ public class GenericTests {
 
     @Then("field {string} is populated with {string}")
     public void fieldIsPopulatedWith(String field, String value) {
-        Context.getVars().setCurrentStepId("3");
+       // Context.getVars().setCurrentStepId("3");
+        TestHelper.setCurrentStepId();
         var element = (Context.getVars().getCurrentPage().getPageObject().getJSONObject(field));
         var searchField =  Page.getWebElement(TestHelper.getLocator(element));
         Assert.assertEquals(searchField.getText(), value);
